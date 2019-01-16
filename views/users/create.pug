@@ -1,0 +1,14 @@
+extends ../layouts/common
+
+block content
+  h1 Create User
+
+  form(action="/users/create", method="POST")
+    .form-group
+      label(for="name") Name
+      input.form-control#name(name="name")
+    .form-group
+      label(for="phone") Name
+      input.form-control#phone(name="phone")
+
+      button.btn.btn-primary Create
