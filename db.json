@@ -1,20 +1,19 @@
 {
   "users": [
     {
-      "name": "ah",
-      "id": "a5f9pV0hu"
+      "name": "",
+      "phone": "",
+      "id": "wU2aF9uGv"
     },
     {
-      "name": "demo",
-      "id": "9r-tpNts3"
+      "name": "Bo Nguyen",
+      "phone": "123123",
+      "id": "z-V6i480W"
     },
     {
-      "name": "Em",
-      "id": "9YN4t4HLX"
-    },
-    {
-      "name": "XIn chao",
-      "id": "rK1QGiaHv"
+      "name": "Anh Bo",
+      "phone": "22222",
+      "id": "DljyVAT7V"
     }
   ]
 }
