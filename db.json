@@ -1,14 +1,11 @@
 {
   "users": [
     {
-      "name": "",
-      "phone": "",
-      "id": "wU2aF9uGv"
-    },
-    {
       "name": "Bo Nguyen",
       "phone": "123123",
-      "id": "z-V6i480W"
+      "id": "z-V6i480W",
+      "email": "demo@example.com",
+      "password": "123456"
     },
     {
       "name": "Anh Bo",
