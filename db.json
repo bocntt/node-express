@@ -8,9 +8,27 @@
       "password": "e10adc3949ba59abbe56e057f20f883e"
     },
     {
-      "name": "Anh Bo",
-      "phone": "22222",
-      "id": "DljyVAT7V"
+      "name": "Hoang",
+      "phone": "123123",
+      "id": "F4qwJGyZR"
+    },
+    {
+      "name": "HUy",
+      "phone": "213",
+      "id": "uMIZ_uB6_",
+      "avatar": "public/uploads/20aacd0fff3f88cf5c4665dcfac4a8ba"
+    },
+    {
+      "name": "Huy",
+      "phone": "11111",
+      "id": "rUS2gqdqH",
+      "avatar": "uploads/6a98533d2b634d706af253d0ed93cadf"
+    },
+    {
+      "name": "Hoang",
+      "phone": "221312312",
+      "id": "kZVUdXHbA",
+      "avatar": "uploads/6c4f5c851d8f56560fd0f53efaf669e5"
     }
   ],
   "products": [
