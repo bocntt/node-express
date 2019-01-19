@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
@@ -7,6 +9,7 @@ var db = require('./db');
 
 var userRouters = require('./routers/user.router');
 var authRouter = require('./routers/auth.router');
+var productRouter = require('./routers/product.router');
 
 var auth = require('./middlewares/auth.middleware');
 
@@ -19,7 +22,7 @@ app.use(express.static('public'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(cookieParser());
+app.use(cookieParser(process.env.SESSION_SECRET));
 
 app.get('/', function(request, response) {
   response.render('index', {
@@ -30,6 +33,8 @@ app.get('/', function(request, response) {
 app.use('/users', auth.authLogin, userRouters);
 
 app.use('/auth', authRouter);
+
+app.use('/product', productRouter);
 
 app.listen(port, function() {
   console.log('server listing on port 3000');
