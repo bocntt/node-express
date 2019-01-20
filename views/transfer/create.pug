@@ -1,0 +1,9 @@
+extends ../layouts/common
+
+block content
+  h2 Form Transfer
+  form(method="POST")
+    input(type="hidden", name="_csrf", value=csrfToken)
+    input(name="accountId", type='text')
+    input(name="amount", type="number")
+    input(type="submit", value="Submit")

@@ -4,6 +4,7 @@ var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+var csurf = require('csurf');
 
 var db = require('./db');
 
@@ -11,11 +12,15 @@ var userRouters = require('./routers/user.router');
 var authRouter = require('./routers/auth.router');
 var productRouter = require('./routers/product.router');
 var cartRouter = require('./routers/cart.router');
+var transferRouter = require('./routers/transfer.router');
 
 var auth = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware');
 
 var port = 3000;
+
+// set up csrf middleware
+var csrfProtected = csurf({cookie: true});
 
 app.set('view engine', 'pug');
 app.set('views', './views');
@@ -26,6 +31,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser(process.env.SESSION_SECRET));
 app.use(sessionMiddleware);
+
+// app.use(csurf({cookie: true}));
 
 app.get('/', function(request, response) {
   response.render('index', {
@@ -40,6 +47,8 @@ app.use('/auth', authRouter);
 app.use('/product', productRouter);
 
 app.use('/cart', cartRouter);
+
+app.use('/transfer', auth.authLogin, csrfProtected, transferRouter);
 
 app.listen(port, function() {
   console.log('server listing on port 3000');
