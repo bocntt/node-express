@@ -632,5 +632,115 @@
       "image": "https://loremflickr.com/320/240",
       "description": "ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo"
     }
+  ],
+  "sessions": [
+    {
+      "id": "usNCCBI1P"
+    },
+    {
+      "id": "7wqisXTGX",
+      "cart": {
+        "a18f2935-9b65-42ae-afca-35d7877a0346": 3,
+        "be2e5e3c-45ac-459a-b644-b5716b40dde3": 1,
+        "3cf196f7-415b-4ceb-b798-b073ce7260e6": 1
+      }
+    },
+    {
+      "id": "f8y129XtH",
+      "cart": {
+        "a18f2935-9b65-42ae-afca-35d7877a0346": 2,
+        "3cf196f7-415b-4ceb-b798-b073ce7260e6": 1
+      }
+    },
+    {
+      "id": "kXQ0iSkvn"
+    },
+    {
+      "id": "T5efmW_vEA"
+    },
+    {
+      "id": "77pzIi9JH6"
+    },
+    {
+      "id": "a6MT7kZGfO"
+    },
+    {
+      "id": "bW1m4_qyv"
+    },
+    {
+      "id": "sec7bgYYph"
+    },
+    {
+      "id": "k3P3x8Giw_"
+    },
+    {
+      "id": "WsewJuAklr"
+    },
+    {
+      "id": "0bzEYGJ93"
+    },
+    {
+      "id": "fENDhLLUvw"
+    },
+    {
+      "id": "BefvXtHkWD"
+    },
+    {
+      "id": "p2bLsnLUD3"
+    },
+    {
+      "id": "kTxp2i6A3"
+    },
+    {
+      "id": "_jCjkj5LkE"
+    },
+    {
+      "id": "4tN68Q60gc"
+    },
+    {
+      "id": "Bc-rc_dIU7"
+    },
+    {
+      "id": "vFNdcxtTp"
+    },
+    {
+      "id": "7Aj2ffQNgd"
+    },
+    {
+      "id": "DEiPO4ERfD"
+    },
+    {
+      "id": "NNEYoHbu-z"
+    },
+    {
+      "id": "eONP2JPhe"
+    },
+    {
+      "id": "Uhf8fDkti4"
+    },
+    {
+      "id": "9kXCE4bqCb"
+    },
+    {
+      "id": "-Wp5Avs7xS"
+    },
+    {
+      "id": "sEsYWelFS"
+    },
+    {
+      "id": "SoiWFCBh0b"
+    },
+    {
+      "id": "QoeCt_bCuO"
+    },
+    {
+      "id": "Fmcm7txUKd"
+    },
+    {
+      "id": "MKmZ-TENd",
+      "cart": {
+        "3cf196f7-415b-4ceb-b798-b073ce7260e6": 1
+      }
+    }
   ]
 }
