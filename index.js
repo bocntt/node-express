@@ -22,7 +22,7 @@ var apiProductRouter = require('./api/routers/product.router');
 var auth = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware');
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 // set up csrf middleware
 var csrfProtected = csurf({cookie: true});
