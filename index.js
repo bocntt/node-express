@@ -5,8 +5,10 @@ var app = express();
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 var csurf = require('csurf');
+var mongoose = require('mongoose');
 
 var db = require('./db');
+mongoose.connect(process.env.MONGO_URL);
 
 var userRouters = require('./routers/user.router');
 var authRouter = require('./routers/auth.router');
