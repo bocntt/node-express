@@ -16,6 +16,9 @@ var productRouter = require('./routers/product.router');
 var cartRouter = require('./routers/cart.router');
 var transferRouter = require('./routers/transfer.router');
 
+// api
+var apiProductRouter = require('./api/routers/product.router');
+
 var auth = require('./middlewares/auth.middleware');
 var sessionMiddleware = require('./middlewares/session.middleware');
 
@@ -51,6 +54,9 @@ app.use('/product', productRouter);
 app.use('/cart', cartRouter);
 
 app.use('/transfer', auth.authLogin, csrfProtected, transferRouter);
+
+// api
+app.use('/api/product', apiProductRouter);
 
 app.listen(port, function() {
   console.log('server listing on port 3000');
